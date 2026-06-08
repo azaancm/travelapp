@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "id": "user_01",
+      "name": "Alex",
+      "avatarUrl": "/avatars/alex.jpg",
+      "currentLocation": {
+        "lat": 48.8584,
+        "lng": 2.2945,
+        "lastUpdated": "2026-06-08T16:00:00Z"
+      }
+    }
+  ],
+  "trips": [
+    {
+      "id": "trip_paris_2026",
+      "title": "Explore Paris",
+      "startDate": "2026-06-03",
+      "endDate": "2026-06-10",
+      "countryFlag": "🇫🇷",
+      "members": ["user_01", "user_02", "user_03"],
+      "journalEntries": [
+        {
+          "id": "entry_eiffel",
+          "locationName": "Eiffel Tower",
+          "date": "2026-06-03",
+          "media": [
+            {
+              "id": "img_01",
+              "type": "image",
+              "url": "/photos/eiffel_view.jpg",
+              "rotation": -1,
+              "stickyNotes": [
+                {
+                  "id": "note_01",
+                  "text": "Nice View",
+                  "color": "#A2D2DF",
+                  "position": { "top": "5%", "right": "5%" }
+                }
+              ],
+              "stickers": [
+                {
+                  "id": "sticker_01",
+                  "type": "camera_sticker",
+                  "position": { "x": 45, "y": 80 },
+                  "scale": 1.2,
+                  "rotation": 12
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "expenses": [
+        {
+          "id": "exp_01",
+          "description": "Group Dinner",
+          "amount": 120.00,
+          "currency": "EUR",
+          "paidById": "user_01",
+          "splitAmong": ["user_01", "user_02", "user_03"]
+        }
+      ]
+    }
+  ]
+}
